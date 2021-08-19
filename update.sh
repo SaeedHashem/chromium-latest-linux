@@ -4,7 +4,9 @@ cd $(dirname $0)
 
 LASTCHANGE_URL="https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux_x64%2FLAST_CHANGE?alt=media"
 
-REVISION=$(curl -s -S $LASTCHANGE_URL)
+#REVISION=$(curl -s -S $LASTCHANGE_URL)
+#hardcoded for now
+REVISION=913092
 
 echo "latest revision is $REVISION"
 
